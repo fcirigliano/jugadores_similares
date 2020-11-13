@@ -1,0 +1,436 @@
+CORRELACION
+
+    id     dist       name age nationality                   club   value  wage release_clause1 158023 0.000000   L. Messi  31   Argentina           FC Barcelona €110.5M €565K        €226.5M2 211110 3.801656  P. Dybala  24   Argentina               Juventus    €89M €205K        €153.5M3 183277 4.327476  E. Hazard  27     Belgium                Chelsea    €93M €340K        €172.1M4 222737 4.652733     Malcom  21      Brazil           FC Barcelona  €31.5M €140K         €70.9M5 188350 4.849506    M. Reus  29     Germany      Borussia Dortmund  €43.5M €100K           €74M6 204970 4.863116 F. Thauvin  25      France Olympique de Marseille    €39M  €72K           €77M
+
+COVARIANZA
+
+      id     dist       name age nationality                   club   value  wage release_clause1 158023  0.00000   L. Messi  31   Argentina           FC Barcelona €110.5M €565K        €226.5M2 211110 63.20956  P. Dybala  24   Argentina               Juventus    €89M €205K        €153.5M3 204970 78.58539 F. Thauvin  25      France Olympique de Marseille    €39M  €72K           €77M4 178311 82.06267       Eder  31       Italy      Jiangsu Suning FC  €11.5M  €29K         €24.7M5 222737 83.43372     Malcom  21      Brazil           FC Barcelona  €31.5M €140K         €70.9M6 178088 84.61528  Juan Mata  30       Spain      Manchester United  €24.5M €160K         €45.3M
+
+
+EUCLEDIANA
+
+      id     dist       name age nationality                   club   value  wage release_clause1 158023  0.00000   L. Messi  31   Argentina           FC Barcelona €110.5M €565K        €226.5M2 211110 63.60031  P. Dybala  24   Argentina               Juventus    €89M €205K        €153.5M3 204970 79.01266 F. Thauvin  25      France Olympique de Marseille    €39M  €72K           €77M4 178311 82.86736       Eder  31       Italy      Jiangsu Suning FC  €11.5M  €29K         €24.7M5 222737 83.94641     Malcom  21      Brazil           FC Barcelona  €31.5M €140K         €70.9M6 178088 85.25843  Juan Mata  30       Spain      Manchester United  €24.5M €160K         €45.3M
+
+
+
+CORRELACION + PONDERADO = 4
+
+      id     dist       name age nationality                   club   value  wage release_clause1 158023 0.000000   L. Messi  31   Argentina           FC Barcelona €110.5M €565K        €226.5M2 211110 3.801656  P. Dybala  24   Argentina               Juventus    €89M €205K        €153.5M3 183277 4.327476  E. Hazard  27     Belgium                Chelsea    €93M €340K        €172.1M4 222737 4.652733     Malcom  21      Brazil           FC Barcelona  €31.5M €140K         €70.9M5 188350 4.849506    M. Reus  29     Germany      Borussia Dortmund  €43.5M €100K           €74M6 204970 4.863116 F. Thauvin  25      France Olympique de Marseille    €39M  €72K           €77M
+
+
+COVARIANZA + PONDERADO = 4
+
+      id      dist              name age nationality            club   value  wage release_clause1 158023   0.00000          L. Messi  31   Argentina    FC Barcelona €110.5M €565K        €226.5M2 211110  81.97432         P. Dybala  24   Argentina        Juventus    €89M €205K        €153.5M3 153079 108.87538         S. Agüero  30   Argentina Manchester City  €64.5M €300K        €119.3M4  20801 110.72539 Cristiano Ronaldo  33    Portugal        Juventus    €77M €405K        €127.1M5 183277 112.50267         E. Hazard  27     Belgium         Chelsea    €93M €340K        €172.1M6 176580 112.98627         L. Suárez  31     Uruguay    FC Barcelona    €80M €455K          €164M
+
+
+EUCLEDEANA + PONDERADO = 4
+
+      id      dist              name age nationality            club   value  wage release_clause1 158023   0.00000          L. Messi  31   Argentina    FC Barcelona €110.5M €565K        €226.5M2 211110  82.31039         P. Dybala  24   Argentina        Juventus    €89M €205K        €153.5M3 153079 109.13753         S. Agüero  30   Argentina Manchester City  €64.5M €300K        €119.3M4  20801 110.98649 Cristiano Ronaldo  33    Portugal        Juventus    €77M €405K        €127.1M5 183277 112.53000         E. Hazard  27     Belgium         Chelsea    €93M €340K        €172.1M6 176580 113.53414         L. Suárez  31     Uruguay    FC Barcelona    €80M €455K          €164M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist         name age nationality                club   value  wage release_clause1 158023   0.0000     L. Messi  31   Argentina        FC Barcelona €110.5M €565K        €226.5M2 153079 148.1005    S. Agüero  30   Argentina     Manchester City  €64.5M €300K        €119.3M3 211110 148.3496    P. Dybala  24   Argentina            Juventus    €89M €205K        €153.5M4 190871 156.7737    Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M5 194765 167.5788 A. Griezmann  27      France     Atlético Madrid    €78M €145K        €165.8M6 183277 173.8185    E. Hazard  27     Belgium             Chelsea    €93M €340K        €172.1M
+
+
+COVARIANZA + PONDERADO = 50
+
+      id     dist         name age nationality                club   value  wage release_clause1 158023   0.0000     L. Messi  31   Argentina        FC Barcelona €110.5M €565K        €226.5M2 153079 556.7169    S. Agüero  30   Argentina     Manchester City  €64.5M €300K        €119.3M3 190871 592.4340    Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M4 194765 626.8035 A. Griezmann  27      France     Atlético Madrid    €78M €145K        €165.8M5 211110 677.3534    P. Dybala  24   Argentina            Juventus    €89M €205K        €153.5M6 183277 729.2550    E. Hazard  27     Belgium             Chelsea    €93M €340K        €172.1M
+
+MANHATTAN
+
+      id     dist              name age nationality                club   value  wage release_clause1 158023   0.0000          L. Messi  31   Argentina        FC Barcelona €110.5M €565K        €226.5M2 211110 530.5883         P. Dybala  24   Argentina            Juventus    €89M €205K        €153.5M3 153079 559.0016         S. Agüero  30   Argentina     Manchester City  €64.5M €300K        €119.3M4  20801 580.9556 Cristiano Ronaldo  33    Portugal            Juventus    €77M €405K        €127.1M5 190871 585.4621         Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M6 231747 593.5379         K. Mbappé  19      France Paris Saint-Germain    €81M €100K        €166.1M
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist            name age nationality                club  value  wage release_clause1 183898 0.000000     A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M2 212404 3.641791 F. Bernardeschi  24       Italy            Juventus €29.5M €110K         €50.9M3 190483 4.294930   Douglas Costa  27      Brazil            Juventus €46.5M €175K         €76.7M4 221634 4.295888       L. Acosta  24   Argentina           DC United   €11M   €8K         €17.3M5 190813 4.481271  S. El Shaarawy  25       Italy                Roma   €21M  €77K         €37.3M6 193082 4.483034     J. Cuadrado  30    Colombia            Juventus €29.5M €150K         €48.7M
+
+
+COVARIANZA
+
+      id     dist          name age nationality                club  value  wage release_clause1 183898  0.00000   A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M2 212196 52.53128      P. Sisto  23     Denmark            RC Celta   €14M  €25K         €32.2M3 186395 53.39933    M. Ritchie  28    Scotland    Newcastle United    €9M  €49K         €17.1M4 217097 57.78989      R. Otero  25   Venezuela            Al Wehda    €8M  €23K         €14.2M5 226226 57.87065   G. Lo Celso  22   Argentina          Real Betis   €20M  €72K            N/A6 214097 58.55506 B. Bourigeaud  24      France    Stade Rennais FC €11.5M  €28K         €22.7M
+
+
+
+EUCLEDIANA
+
+      id     dist          name age nationality                club  value  wage release_clause1 183898  0.00000   A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M2 212196 52.82992      P. Sisto  23     Denmark            RC Celta   €14M  €25K         €32.2M3 186395 53.71220    M. Ritchie  28    Scotland    Newcastle United    €9M  €49K         €17.1M4 226226 58.14637   G. Lo Celso  22   Argentina          Real Betis   €20M  €72K            N/A5 217097 58.37808      R. Otero  25   Venezuela            Al Wehda    €8M  €23K         €14.2M6 214097 58.93216 B. Bourigeaud  24      France    Stade Rennais FC €11.5M  €28K         €22.7M
+
+
+COVARIANZA + PONDERADO = 4
+
+      id     dist          name age nationality                club  value  wage release_clause1 183898  0.00000   A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M2 212196 52.53128      P. Sisto  23     Denmark            RC Celta   €14M  €25K         €32.2M3 186395 53.39933    M. Ritchie  28    Scotland    Newcastle United    €9M  €49K         €17.1M4 217097 57.78989      R. Otero  25   Venezuela            Al Wehda    €8M  €23K         €14.2M5 226226 57.87065   G. Lo Celso  22   Argentina          Real Betis   €20M  €72K            N/A6 214097 58.55506 B. Bourigeaud  24      France    Stade Rennais FC €11.5M  €28K         €22.7M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist          name age nationality                club  value  wage release_clause1 183898  0.00000   A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M2 212196 52.53128      P. Sisto  23     Denmark            RC Celta   €14M  €25K         €32.2M3 186395 53.39933    M. Ritchie  28    Scotland    Newcastle United    €9M  €49K         €17.1M4 217097 57.78989      R. Otero  25   Venezuela            Al Wehda    €8M  €23K         €14.2M5 226226 57.87065   G. Lo Celso  22   Argentina          Real Betis   €20M  €72K            N/A6 214097 58.55506 B. Bourigeaud  24      France    Stade Rennais FC €11.5M  €28K         €22.7M
+
+MANHATTAN
+
+      id     dist        name age nationality                club  value  wage release_clause1 183898   0.0000 A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M2 237670 222.8767 Bruno Xadas  20    Portugal            SC Braga    €7M   €9K         €15.4M3 226226 225.6064 G. Lo Celso  22   Argentina          Real Betis   €20M  €72K            N/A4 186395 227.6233  M. Ritchie  28    Scotland    Newcastle United    €9M  €49K         €17.1M5 212196 232.3234    P. Sisto  23     Denmark            RC Celta   €14M  €25K         €32.2M6 222678 242.5860       Régis  25      Brazil            Al Wehda    €7M  €12K            N/A
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist          name age nationality                club   value  wage release_clause1 190871 0.000000     Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M2 183898 5.474431   A. Di María  30   Argentina Paris Saint-Germain  €29.5M €125K         €54.6M3 139068 5.896114          Nani  31    Portugal         Sporting CP  €15.5M  €19K           €31M4 193165 6.006579     J. Corona  25      Mexico            FC Porto  €21.5M  €18K         €44.6M5 231443 6.485436    O. Dembélé  21      France        FC Barcelona    €40M €155K           €90M6 146562 6.566929 Santi Cazorla  33       Spain       Villarreal CF   €8.5M  €39K         €17.9M
+
+
+COVARIANZA
+
+      id     dist          name age nationality                club   value  wage release_clause1 190871  0.00000     Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M2 231443 70.68348    O. Dembélé  21      France        FC Barcelona    €40M €155K           €90M3 226377 77.90317   G. Martínez  25   Argentina         River Plate  €13.5M  €25K         €19.9M4 188803 81.50457        Taison  30      Brazil    Shakhtar Donetsk    €21M   €1K         €44.1M5 230977 84.31837    M. Almirón  24    Paraguay      Atlanta United  €19.5M  €11K         €30.7M6 185020 85.03316 José Callejón  31       Spain              Napoli  €27.5M €105K         €46.8M
+
+
+EUCLEDIANA
+
+      id     dist          name age nationality                club   value  wage release_clause1 190871  0.00000     Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M2 231443 71.38627    O. Dembélé  21      France        FC Barcelona    €40M €155K           €90M3 226377 78.42831   G. Martínez  25   Argentina         River Plate  €13.5M  €25K         €19.9M4 188803 83.31266        Taison  30      Brazil    Shakhtar Donetsk    €21M   €1K         €44.1M5 230977 85.27602    M. Almirón  24    Paraguay      Atlanta United  €19.5M  €11K         €30.7M6 185020 86.86196 José Callejón  31       Spain              Napoli  €27.5M €105K         €46.8M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist         name age nationality                club   value  wage release_clause1 190871   0.0000    Neymar Jr  26      Brazil Paris Saint-Germain €118.5M €290K        €228.1M2 211110 130.6999    P. Dybala  24   Argentina            Juventus    €89M €205K        €153.5M3 183277 145.7588    E. Hazard  27     Belgium             Chelsea    €93M €340K        €172.1M4 194765 150.2007 A. Griezmann  27      France     Atlético Madrid    €78M €145K        €165.8M5 231747 152.5481    K. Mbappé  19      France Paris Saint-Germain    €81M €100K        €166.1M6 158023 156.7737     L. Messi  31   Argentina        FC Barcelona €110.5M €565K        €226.5M
+
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist           name age nationality                club  value  wage release_clause1 176580 0.000000      L. Suárez  31     Uruguay        FC Barcelona   €80M €455K          €164M2 202126 3.198256        H. Kane  24     England   Tottenham Hotspur €83.5M €205K        €160.7M3 179813 3.236804      E. Cavani  31     Uruguay Paris Saint-Germain   €60M €200K          €111M4 188545 3.629098 R. Lewandowski  29      Poland   FC Bayern München   €77M €205K        €127.1M5 184200 3.702641  M. Arnautovi_  29     Austria     West Ham United   €22M €120K         €41.8M6 184941 3.746016     A. Sánchez  29       Chile   Manchester United €37.5M €215K         €69.4M
+
+
+COVARIANZA
+
+      id     dist             name age nationality                           club  value  wage1 176580  0.00000        L. Suárez  31     Uruguay                   FC Barcelona   €80M €455K2 184941 56.13428       A. Sánchez  29       Chile              Manchester United €37.5M €215K3 179813 56.54343        E. Cavani  31     Uruguay            Paris Saint-Germain   €60M €200K4 184200 58.50632    M. Arnautovi_  29     Austria                West Ham United   €22M €120K5 212523 66.90348 Anderson Talisca  24      Brazil Guangzhou Evergrande Taobao FC €36.5M  €18K6 173731 67.34574          G. Bale  28       Wales                    Real Madrid   €60M €355K
+
+
+EUCLEDIANA
+
+      id     dist             name age nationality                           club  value  wage release_clause1 176580  0.00000        L. Suárez  31     Uruguay                   FC Barcelona   €80M €455K          €164M2 179813 57.26255        E. Cavani  31     Uruguay            Paris Saint-Germain   €60M €200K          €111M3 184941 57.61944       A. Sánchez  29       Chile              Manchester United €37.5M €215K         €69.4M4 184200 60.49793    M. Arnautovi_  29     Austria                West Ham United   €22M €120K         €41.8M5 212523 68.64401 Anderson Talisca  24      Brazil Guangzhou Evergrande Taobao FC €36.5M  €18K            N/A6 173731 69.13031          G. Bale  28       Wales                    Real Madrid   €60M €355K          €123M
+
+
+
+CORRELACION + PONDERADO = 10
+
+      id     dist           name age nationality                club  value  wage release_clause1 176580 0.000000      L. Suárez  31     Uruguay        FC Barcelona   €80M €455K          €164M2 202126 3.198256        H. Kane  24     England   Tottenham Hotspur €83.5M €205K        €160.7M3 179813 3.236804      E. Cavani  31     Uruguay Paris Saint-Germain   €60M €200K          €111M4 188545 3.629098 R. Lewandowski  29      Poland   FC Bayern München   €77M €205K        €127.1M5 184200 3.702641  M. Arnautovi_  29     Austria     West Ham United   €22M €120K         €41.8M6 184941 3.746016     A. Sánchez  29       Chile   Manchester United €37.5M €215K         €69.4M
+
+
+
+COVARIANZA + PONDERADO = 4
+
+
+      id     dist           name age nationality                club  value  wage release_clause1 176580  0.00000      L. Suárez  31     Uruguay        FC Barcelona   €80M €455K          €164M2 179813 69.52849      E. Cavani  31     Uruguay Paris Saint-Germain   €60M €200K          €111M3 188350 79.54371        M. Reus  29     Germany   Borussia Dortmund €43.5M €100K           €74M4 153079 79.61607      S. Agüero  30   Argentina     Manchester City €64.5M €300K        €119.3M5 188545 79.64686 R. Lewandowski  29      Poland   FC Bayern München   €77M €205K        €127.1M6 173731 79.70841        G. Bale  28       Wales         Real Madrid   €60M €355K          €123M
+
+
+
+COVARIANZA + PONDERADO = 10
+
+      id      dist           name age nationality                club  value  wage release_clause1 176580   0.00000      L. Suárez  31     Uruguay        FC Barcelona   €80M €455K          €164M2 188545  93.69993 R. Lewandowski  29      Poland   FC Bayern München   €77M €205K        €127.1M3 153079  95.45042      S. Agüero  30   Argentina     Manchester City €64.5M €300K        €119.3M4 188350 113.48654        M. Reus  29     Germany   Borussia Dortmund €43.5M €100K           €74M5 192387 116.12396    C. Immobile  28       Italy               Lazio   €52M €115K         €88.4M6 179813 118.28051      E. Cavani  31     Uruguay Paris Saint-Germain   €60M €200K          €111M
+
+
+COVARIANZA + PONDERADO = 50
+
+
+      id     dist           name age nationality              club  value  wage release_clause1 176580   0.0000      L. Suárez  31     Uruguay      FC Barcelona   €80M €455K          €164M2 188545 279.9637 R. Lewandowski  29      Poland FC Bayern München   €77M €205K        €127.1M3 153079 297.1713      S. Agüero  30   Argentina   Manchester City €64.5M €300K        €119.3M4 192387 368.6255    C. Immobile  28       Italy             Lazio   €52M €115K         €88.4M5 167664 422.0927     G. Higuaín  30   Argentina             Milan   €57M €245K            N/A6 188350 447.3021        M. Reus  29     Germany Borussia Dortmund €43.5M €100K           €74M
+
+
+COVARIANZA + PONDERADO = 100
+
+      id     dist           name age nationality              club  value  wage release_clause1 176580   0.0000      L. Suárez  31     Uruguay      FC Barcelona   €80M €455K          €164M2 188545 543.9482 R. Lewandowski  29      Poland FC Bayern München   €77M €205K        €127.1M3 153079 579.4918      S. Agüero  30   Argentina   Manchester City €64.5M €300K        €119.3M4 192387 719.9894    C. Immobile  28       Italy             Lazio   €52M €115K         €88.4M5 167664 829.5555     G. Higuaín  30   Argentina             Milan   €57M €245K            N/A6 188350 886.0469        M. Reus  29     Germany Borussia Dortmund €43.5M €100K           €74M
+
+
+MANHATTAN
+
+      id     dist           name age nationality                club  value  wage release_clause1 176580   0.0000      L. Suárez  31     Uruguay        FC Barcelona   €80M €455K          €164M2 153079 346.0376      S. Agüero  30   Argentina     Manchester City €64.5M €300K        €119.3M3 188545 361.8052 R. Lewandowski  29      Poland   FC Bayern München   €77M €205K        €127.1M4 179813 419.3220      E. Cavani  31     Uruguay Paris Saint-Germain   €60M €200K          €111M5 188350 420.5913        M. Reus  29     Germany   Borussia Dortmund €43.5M €100K           €74M6 194765 440.0311   A. Griezmann  27      France     Atlético Madrid   €78M €145K        €165.8M
+
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist          name age nationality              club  value  wage release_clause1 193080 0.000000        De Gea  27       Spain Manchester United   €72M €260K        €138.6M2 163587 2.260563 K. Schmeichel  31     Denmark    Leicester City   €19M  €78K         €36.1M3 204935 2.667319   J. Pickford  24     England           Everton   €25M  €78K         €49.4M4 167495 2.697328      M. Neuer  32     Germany FC Bayern München   €38M €130K         €62.7M5 210257 2.740725       Ederson  24      Brazil   Manchester City €41.5M €125K         €79.9M6 193041 3.156181      K. Navas  31  Costa Rica       Real Madrid €30.5M €195K         €62.5M
+
+
+
+COVARIANZA
+
+      id     dist          name age nationality                   club  value  wage release_clause1 193080  0.00000        De Gea  27       Spain      Manchester United   €72M €260K        €138.6M2 204935 32.34262   J. Pickford  24     England                Everton   €25M  €78K         €49.4M3 163587 34.41851 K. Schmeichel  31     Denmark         Leicester City   €19M  €78K         €36.1M4 167495 35.61383      M. Neuer  32     Germany      FC Bayern München   €38M €130K         €62.7M5 199005 46.31288       M. Ryan  26   Australia Brighton & Hove Albion €10.5M  €41K         €20.7M6   1179 48.55328     G. Buffon  40       Italy    Paris Saint-Germain    €4M  €77K          €7.4M
+
+
+EUCLEDIANA
+
+      id     dist          name age nationality                   club  value  wage release_clause1 193080  0.00000        De Gea  27       Spain      Manchester United   €72M €260K        €138.6M2 204935 33.57082   J. Pickford  24     England                Everton   €25M  €78K         €49.4M3 163587 35.39774 K. Schmeichel  31     Denmark         Leicester City   €19M  €78K         €36.1M4 167495 36.91883      M. Neuer  32     Germany      FC Bayern München   €38M €130K         €62.7M5 199005 47.97916       M. Ryan  26   Australia Brighton & Hove Albion €10.5M  €41K         €20.7M6   1179 50.48762     G. Buffon  40       Italy    Paris Saint-Germain    €4M  €77K          €7.4M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist          name age nationality                   club  value  wage release_clause1 193080  0.00000        De Gea  27       Spain      Manchester United   €72M €260K        €138.6M2 204935 32.34262   J. Pickford  24     England                Everton   €25M  €78K         €49.4M3 163587 34.41851 K. Schmeichel  31     Denmark         Leicester City   €19M  €78K         €36.1M4 167495 35.61383      M. Neuer  32     Germany      FC Bayern München   €38M €130K         €62.7M5 199005 46.31288       M. Ryan  26   Australia Brighton & Hove Albion €10.5M  €41K         €20.7M6   1179 48.55328     G. Buffon  40       Italy    Paris Saint-Germain    €4M  €77K          €7.4M
+
+
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist          name age nationality                club  value  wage release_clause1 195864 0.000000      P. Pogba  25      France   Manchester United   €64M €210K        €123.2M2 176676 4.712360       Marcelo  30      Brazil         Real Madrid   €43M €285K         €88.2M3 179846 5.044739    S. Khedira  31     Germany            Juventus   €33M €160K         €54.5M4 193082 5.075911   J. Cuadrado  30    Colombia            Juventus €29.5M €150K         €48.7M5 199767 5.349943 M. van Ginkel  25 Netherlands             Chelsea €14.5M  €98K         €27.9M6 183898 5.350962   A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M
+
+
+COVARIANZA
+
+      id     dist           name age nationality              club  value  wage release_clause1 195864  0.00000       P. Pogba  25      France Manchester United   €64M €210K        €123.2M2 171877 61.16585      M. Ham_ík  30    Slovakia            Napoli €46.5M €125K         €79.1M3 173909 64.34291     K. Boateng  31       Ghana          Sassuolo   €15M  €65K         €25.5M4 186832 65.55701     K. Asamoah  29       Ghana             Inter  €9.5M  €62K         €16.2M5 231969 66.51523 R. Malinovskyi  25     Ukraine          KRC Genk €11.5M  €17K         €18.1M6 212462 67.71881    Alex Telles  25      Brazil          FC Porto   €32M  €22K         €66.4M
+
+
+
+EUCLEDIANA
+
+      id     dist           name age nationality              club  value  wage release_clause1 195864  0.00000       P. Pogba  25      France Manchester United   €64M €210K        €123.2M2 171877 62.46599      M. Ham_ík  30    Slovakia            Napoli €46.5M €125K         €79.1M3 173909 65.01538     K. Boateng  31       Ghana          Sassuolo   €15M  €65K         €25.5M4 186832 66.27217     K. Asamoah  29       Ghana             Inter  €9.5M  €62K         €16.2M5 231969 67.38694 R. Malinovskyi  25     Ukraine          KRC Genk €11.5M  €17K         €18.1M6 212462 68.43975    Alex Telles  25      Brazil          FC Porto   €32M  €22K         €66.4M
+
+
+CORRELACION + PONDERADO = 10
+
+      id     dist          name age nationality                club  value  wage release_clause1 195864 0.000000      P. Pogba  25      France   Manchester United   €64M €210K        €123.2M2 176676 4.712360       Marcelo  30      Brazil         Real Madrid   €43M €285K         €88.2M3 179846 5.044739    S. Khedira  31     Germany            Juventus   €33M €160K         €54.5M4 193082 5.075911   J. Cuadrado  30    Colombia            Juventus €29.5M €150K         €48.7M5 199767 5.349943 M. van Ginkel  25 Netherlands             Chelsea €14.5M  €98K         €27.9M6 183898 5.350962   A. Di María  30   Argentina Paris Saint-Germain €29.5M €125K         €54.6M
+
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist           name age nationality              club  value  wage release_clause1 195864  0.00000       P. Pogba  25      France Manchester United   €64M €210K        €123.2M2 171877 61.16585      M. Ham_ík  30    Slovakia            Napoli €46.5M €125K         €79.1M3 173909 64.34291     K. Boateng  31       Ghana          Sassuolo   €15M  €65K         €25.5M4 186832 65.55701     K. Asamoah  29       Ghana             Inter  €9.5M  €62K         €16.2M5 231969 66.51523 R. Malinovskyi  25     Ukraine          KRC Genk €11.5M  €17K         €18.1M6 212462 67.71881    Alex Telles  25      Brazil          FC Porto   €32M  €22K         €66.4M
+
+
+COVARIANZA + PONDERADO = 50
+
+      id     dist           name age nationality              club  value  wage release_clause1 195864  0.00000       P. Pogba  25      France Manchester United   €64M €210K        €123.2M2 171877 61.16585      M. Ham_ík  30    Slovakia            Napoli €46.5M €125K         €79.1M3 173909 64.34291     K. Boateng  31       Ghana          Sassuolo   €15M  €65K         €25.5M4 186832 65.55701     K. Asamoah  29       Ghana             Inter  €9.5M  €62K         €16.2M5 231969 66.51523 R. Malinovskyi  25     Ukraine          KRC Genk €11.5M  €17K         €18.1M6 212462 67.71881    Alex Telles  25      Brazil          FC Porto   €32M  €22K         €66.4M
+
+
+MANHATTAN
+
+      id     dist          name age nationality                 club  value  wage release_clause1 195864   0.0000      P. Pogba  25      France    Manchester United   €64M €210K        €123.2M2 197813 251.3697     J. Martin  28      France RC Strasbourg Alsace  €7.5M  €20K           €15M3 186832 264.9425    K. Asamoah  29       Ghana                Inter  €9.5M  €62K         €16.2M4 199767 265.3414 M. van Ginkel  25 Netherlands              Chelsea €14.5M  €98K         €27.9M5 212462 270.8151   Alex Telles  25      Brazil             FC Porto   €32M  €22K         €66.4M6 199304 272.2329        Danilo  26      Brazil      Manchester City   €12M €110K         €23.1M
+
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist             name age nationality              club  value  wage release_clause1 189511 0.000000  Sergio Busquets  29       Spain      FC Barcelona €51.5M €315K        €105.6M2 207566 4.189117 William Carvalho  26    Portugal        Real Betis €31.5M  €38K         €68.5M3 178603 4.519219       M. Hummels  29     Germany FC Bayern München   €46M €160K         €75.9M4 184432 4.594405      Azpilicueta  28       Spain           Chelsea   €35M €175K         €64.8M5   3281 4.646539        Tarantini  34    Portugal        Rio Ave FC  €3.2M  €10K          €6.8M6 190815 4.766469         D. Blind  28 Netherlands              Ajax   €12M  €22K         €16.8M
+
+
+COVARIANZA
+
+      id     dist            name age   nationality          club  value  wage release_clause1 189511  0.00000 Sergio Busquets  29         Spain  FC Barcelona €51.5M €315K        €105.6M2 238744 72.66464     W. McKennie  19 United States FC Schalke 04  €9.5M  €12K         €18.1M3 230252 77.56262      Jorginhson  26        Brazil       Vitória    €6M  €13K         €11.4M4 212755 79.07493      J. Hendrix  23   Netherlands           PSV   €10M  €13K         €14.8M5   3281 81.77704       Tarantini  34      Portugal    Rio Ave FC  €3.2M  €10K          €6.8M6 184432 82.00123     Azpilicueta  28         Spain       Chelsea   €35M €175K         €64.8M
+
+
+
+EUCLEDIANA
+
+      id     dist            name age   nationality          club  value  wage release_clause1 189511  0.00000 Sergio Busquets  29         Spain  FC Barcelona €51.5M €315K        €105.6M2 238744 73.31439     W. McKennie  19 United States FC Schalke 04  €9.5M  €12K         €18.1M3 230252 79.35994      Jorginhson  26        Brazil       Vitória    €6M  €13K         €11.4M4 212755 80.81460      J. Hendrix  23   Netherlands           PSV   €10M  €13K         €14.8M5   3281 82.80097       Tarantini  34      Portugal    Rio Ave FC  €3.2M  €10K          €6.8M6 184432 83.20457     Azpilicueta  28         Spain       Chelsea   €35M €175K         €64.8M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist            name age   nationality          club  value  wage release_clause1 189511  0.00000 Sergio Busquets  29         Spain  FC Barcelona €51.5M €315K        €105.6M2 238744 72.66464     W. McKennie  19 United States FC Schalke 04  €9.5M  €12K         €18.1M3 230252 77.56262      Jorginhson  26        Brazil       Vitória    €6M  €13K         €11.4M4 212755 79.07493      J. Hendrix  23   Netherlands           PSV   €10M  €13K         €14.8M5   3281 81.77704       Tarantini  34      Portugal    Rio Ave FC  €3.2M  €10K          €6.8M6 184432 82.00123     Azpilicueta  28         Spain       Chelsea   €35M €175K         €64.8M
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist              name age nationality                club  value  wage release_clause1  20801 0.000000 Cristiano Ronaldo  33    Portugal            Juventus   €77M €405K        €127.1M2 202556 4.631399          M. Depay  24 Netherlands  Olympique Lyonnais   €42M  €93K           €83M3 231747 4.648489         K. Mbappé  19      France Paris Saint-Germain   €81M €100K        €166.1M4 202126 5.207545           H. Kane  24     England   Tottenham Hotspur €83.5M €205K        €160.7M5 208808 5.282650         Q. Promes  26 Netherlands          Sevilla FC €30.5M  €28K         €66.3M6 179813 5.828597         E. Cavani  31     Uruguay Paris Saint-Germain   €60M €200K          €111M
+
+
+COVARIANZA
+
+      id     dist              name age nationality               club  value  wage release_clause1  20801  0.00000 Cristiano Ronaldo  33    Portugal           Juventus   €77M €405K        €127.1M2 202126 59.31119           H. Kane  24     England  Tottenham Hotspur €83.5M €205K        €160.7M3 198329 69.03708           Rodrigo  27       Spain        Valencia CF €30.5M  €57K         €66.3M4 202556 72.12255          M. Depay  24 Netherlands Olympique Lyonnais   €42M  €93K           €83M5 153079 74.71346         S. Agüero  30   Argentina    Manchester City €64.5M €300K        €119.3M6 184941 76.64034        A. Sánchez  29       Chile  Manchester United €37.5M €215K         €69.4M
+
+
+EUCLEDIANA
+
+      id     dist              name age nationality               club  value  wage release_clause1  20801  0.00000 Cristiano Ronaldo  33    Portugal           Juventus   €77M €405K        €127.1M2 202126 60.73714           H. Kane  24     England  Tottenham Hotspur €83.5M €205K        €160.7M3 198329 70.35624           Rodrigo  27       Spain        Valencia CF €30.5M  €57K         €66.3M4 202556 72.46378          M. Depay  24 Netherlands Olympique Lyonnais   €42M  €93K           €83M5 153079 75.53807         S. Agüero  30   Argentina    Manchester City €64.5M €300K        €119.3M6 184941 76.92854        A. Sánchez  29       Chile  Manchester United €37.5M €215K         €69.4M
+
+
+COVARIANZA + PONDERADO = 50
+
+      id     dist              name age nationality              club  value  wage release_clause1  20801   0.0000 Cristiano Ronaldo  33    Portugal          Juventus   €77M €405K        €127.1M2 153079 427.7972         S. Agüero  30   Argentina   Manchester City €64.5M €300K        €119.3M3 173731 555.4669           G. Bale  28       Wales       Real Madrid   €60M €355K          €123M4 176580 571.2712         L. Suárez  31     Uruguay      FC Barcelona   €80M €455K          €164M5 188350 611.2139           M. Reus  29     Germany Borussia Dortmund €43.5M €100K           €74M6 188545 652.9558    R. Lewandowski  29      Poland FC Bayern München   €77M €205K        €127.1M
+
+
+COVARIANZA + PONDERADO = 100
+
+
+      id      dist              name age nationality              club  value  wage release_clause1  20801    0.0000 Cristiano Ronaldo  33    Portugal          Juventus   €77M €405K        €127.1M2 153079  845.8785         S. Agüero  30   Argentina   Manchester City €64.5M €300K        €119.3M3 173731 1099.3378           G. Bale  28       Wales       Real Madrid   €60M €355K          €123M4 176580 1134.1741         L. Suárez  31     Uruguay      FC Barcelona   €80M €455K          €164M5 188350 1211.8508           M. Reus  29     Germany Borussia Dortmund €43.5M €100K           €74M6 188545 1295.7049    R. Lewandowski  29      Poland FC Bayern München   €77M €205K        €127.1M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist              name age nationality              club  value  wage release_clause1  20801   0.0000 Cristiano Ronaldo  33    Portugal          Juventus   €77M €405K        €127.1M2 153079 112.2963         S. Agüero  30   Argentina   Manchester City €64.5M €300K        €119.3M3 176580 138.3864         L. Suárez  31     Uruguay      FC Barcelona   €80M €455K          €164M4 173731 143.3302           G. Bale  28       Wales       Real Madrid   €60M €355K          €123M5 188350 152.2577           M. Reus  29     Germany Borussia Dortmund €43.5M €100K           €74M6 188545 159.8477    R. Lewandowski  29      Poland FC Bayern München   €77M €205K        €127.1M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist              name age nationality                   club  value  wage release_clause1 164240 0.000000      Thiago Silva  33      Brazil    Paris Saint-Germain   €24M €165K         €44.4M2 188005 2.871951           Camacho  28       Spain          VfL Wolfsburg €13.5M  €51K           €24M3 189606 3.532374 J. Baumgartlinger  30     Austria    Bayer 04 Leverkusen  €7.5M  €53K         €12.8M4 190674 3.597239          B. André  27      France       Stade Rennais FC    €9M  €32K         €17.1M5 142754 3.666244     J. Mascherano  34   Argentina Hebei China Fortune FC  €4.5M  €20K          €9.7M6 192789 3.829261      Mario Gaspar  27       Spain          Villarreal CF   €12M  €35K         €25.2M
+
+
+COVARIANZA
+
+      id     dist              name age nationality                club  value  wage release_clause1 164240  0.00000      Thiago Silva  33      Brazil Paris Saint-Germain   €24M €165K         €44.4M2 188005 63.87581           Camacho  28       Spain       VfL Wolfsburg €13.5M  €51K           €24M3 146963 69.79493         J. Pinola  35   Argentina         River Plate  €2.1M  €16K          €2.9M4 165109 69.94109           S. Radu  31     Romania               Lazio   €10M  €51K           €17M5 192789 71.90824      Mario Gaspar  27       Spain       Villarreal CF   €12M  €35K         €25.2M6 189606 71.97965 J. Baumgartlinger  30     Austria Bayer 04 Leverkusen  €7.5M  €53K         €12.8M
+
+
+EUCLEDIANA
+
+      id     dist              name age nationality                club  value  wage release_clause1 164240  0.00000      Thiago Silva  33      Brazil Paris Saint-Germain   €24M €165K         €44.4M2 188005 64.79969           Camacho  28       Spain       VfL Wolfsburg €13.5M  €51K           €24M3 165109 70.61161           S. Radu  31     Romania               Lazio   €10M  €51K           €17M4 146963 71.31620         J. Pinola  35   Argentina         River Plate  €2.1M  €16K          €2.9M5 192789 72.63608      Mario Gaspar  27       Spain       Villarreal CF   €12M  €35K         €25.2M6 189606 72.67737 J. Baumgartlinger  30     Austria Bayer 04 Leverkusen  €7.5M  €53K         €12.8M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist              name age nationality                club  value  wage release_clause1 164240  0.00000      Thiago Silva  33      Brazil Paris Saint-Germain   €24M €165K         €44.4M2 188005 63.87581           Camacho  28       Spain       VfL Wolfsburg €13.5M  €51K           €24M3 146963 69.79493         J. Pinola  35   Argentina         River Plate  €2.1M  €16K          €2.9M4 165109 69.94109           S. Radu  31     Romania               Lazio   €10M  €51K           €17M5 192789 71.90824      Mario Gaspar  27       Spain       Villarreal CF   €12M  €35K         €25.2M6 189606 71.97965 J. Baumgartlinger  30     Austria Bayer 04 Leverkusen  €7.5M  €53K         €12.8M
+
+
+MANHATAN:
+
+      id     dist            name age nationality                club  value  wage release_clause1 164240   0.0000    Thiago Silva  33      Brazil Paris Saint-Germain   €24M €165K         €44.4M2 188005 280.8422         Camacho  28       Spain       VfL Wolfsburg €13.5M  €51K           €24M3 146963 281.5312       J. Pinola  35   Argentina         River Plate  €2.1M  €16K          €2.9M4 190674 285.8104        B. André  27      France    Stade Rennais FC    €9M  €32K         €17.1M5 230423 288.8725 Pascoal Muscato  26      Brazil              Santos  €4.9M  €15K          €9.3M6 165109 291.9317         S. Radu  31     Romania               Lazio   €10M  €51K           €17M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CORRELACION
+
+      id     dist          name age nationality         club  value  wage release_clause1 215914 0.000000      N. Kanté  27      France      Chelsea   €63M €225K        €121.3M2 178518 3.379745 R. Nainggolan  30     Belgium        Inter €35.5M €105K         €60.4M3 189332 3.951261    Jordi Alba  29       Spain FC Barcelona   €38M €250K         €77.9M4 191053 4.043614     T. Rincón  30   Venezuela       Torino    €8M  €42K         €13.6M5 170890 4.212913    B. Matuidi  31      France     Juventus   €26M €145K         €42.9M6 199914 4.241002         Allan  27      Brazil       Napoli €26.5M  €87K         €45.1M
+
+
+COVARIANZA
+
+      id     dist          name age          nationality         club  value  wage release_clause1 215914  0.00000      N. Kanté  27               France      Chelsea   €63M €225K        €121.3M2 191053 54.54485     T. Rincón  30            Venezuela       Torino    €8M  €42K         €13.6M3 201455 56.88588  G. Kondogbia  25 Central African Rep.  Valencia CF €27.5M  €46K         €59.8M4 178518 63.37558 R. Nainggolan  30              Belgium        Inter €35.5M €105K         €60.4M5 156519 66.71566    H. Herrera  28               Mexico     FC Porto €17.5M  €20K           €35M6 189332 67.10063    Jordi Alba  29                Spain FC Barcelona   €38M €250K         €77.9M
+
+EUCLEDIANA
+
+      id     dist          name age          nationality         club  value  wage release_clause1 215914  0.00000      N. Kanté  27               France      Chelsea   €63M €225K        €121.3M2 191053 55.11806     T. Rincón  30            Venezuela       Torino    €8M  €42K         €13.6M3 201455 57.80138  G. Kondogbia  25 Central African Rep.  Valencia CF €27.5M  €46K         €59.8M4 178518 64.09368 R. Nainggolan  30              Belgium        Inter €35.5M €105K         €60.4M5 156519 67.32756    H. Herrera  28               Mexico     FC Porto €17.5M  €20K           €35M6 189332 67.55738    Jordi Alba  29                Spain FC Barcelona   €38M €250K         €77.9M
+
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist          name age          nationality         club  value  wage release_clause1 215914  0.00000      N. Kanté  27               France      Chelsea   €63M €225K        €121.3M2 191053 54.54485     T. Rincón  30            Venezuela       Torino    €8M  €42K         €13.6M3 201455 56.88588  G. Kondogbia  25 Central African Rep.  Valencia CF €27.5M  €46K         €59.8M4 178518 63.37558 R. Nainggolan  30              Belgium        Inter €35.5M €105K         €60.4M5 156519 66.71566    H. Herrera  28               Mexico     FC Porto €17.5M  €20K           €35M6 189332 67.10063    Jordi Alba  29                Spain FC Barcelona   €38M €250K         €77.9M
+
+
+MANHATTAN:
+
+      id     dist          name age          nationality         club  value  wage release_clause1 215914   0.0000      N. Kanté  27               France      Chelsea   €63M €225K        €121.3M2 191053 229.0324     T. Rincón  30            Venezuela       Torino    €8M  €42K         €13.6M3 178518 246.3002 R. Nainggolan  30              Belgium        Inter €35.5M €105K         €60.4M4 201455 253.8399  G. Kondogbia  25 Central African Rep.  Valencia CF €27.5M  €46K         €59.8M5 214047 265.2165      M. Uribe  27             Colombia Club América  €8.5M  €54K         €15.1M6 198949 270.9241    K. Malcuit  26               France       Napoli  €7.5M  €47K         €13.3M
+
+
+
+
+
+
+
+
+CORRELACION
+
+ id     dist           name      age nationality1 242267 0.000000   J. Campuzano  22    Colombia2 205072 2.904474    D. Pedersen  25     Denmark3 243558 3.040161 Óscar Valentín  23       Spain4 190176 3.096723   Marc Pedraza  31       Spain5 230809 3.180544     C. Johnson  21     England6 211707 3.193496      P. McGinn  27    Scotland
+
+
+COVARIANZA
+
+      id     dist            name age nationality              club value wage release_clause1 242267  0.00000    J. Campuzano  22    Colombia Atlético Nacional €1.3M  €2K          €2.6M2 238282 56.00246    M. Coulibaly  19     Senegal           Udinese €1.4M  €4K          €3.3M3 242490 59.50191        S. Gomez  22    Colombia  Itagüí Leones FC €850K  €1K          €1.3M4 235647 59.87985       H. Sarpei  19       Ghana     VfB Stuttgart €240K  €2K          €456K5 233105 59.99989      K. Dougall  25   Australia          Barnsley €650K  €3K          €1.2M6 220968 60.04206 A. El Messaoudi  22     Morocco   Fortuna Sittard €1.2M  €4K          €1.8M
+
+EUCLEDIANA
+
+      id     dist            name age  nationality              club value wage release_clause1 242267  0.00000    J. Campuzano  22     Colombia Atlético Nacional €1.3M  €2K          €2.6M2 238282 56.83309    M. Coulibaly  19      Senegal           Udinese €1.4M  €4K          €3.3M3 242490 59.78294        S. Gomez  22     Colombia  Itagüí Leones FC €850K  €1K          €1.3M4 233105 60.82763      K. Dougall  25    Australia          Barnsley €650K  €3K          €1.2M5 220968 61.08191 A. El Messaoudi  22      Morocco   Fortuna Sittard €1.2M  €4K          €1.8M6 210156 61.63603    O. Abdulaziz  34 Saudi Arabia        Al Faisaly €160K  €6K          €264K
+
+
+EUCLEDEANA + PONDERADO = 4
+
+
+
+COVARIANZA + PONDERADO = 4
+
+      id     dist            name age nationality              club value wage release_clause1 242267  0.00000    J. Campuzano  22    Colombia Atlético Nacional €1.3M  €2K          €2.6M2 238282 56.00246    M. Coulibaly  19     Senegal           Udinese €1.4M  €4K          €3.3M3 242490 59.50191        S. Gomez  22    Colombia  Itagüí Leones FC €850K  €1K          €1.3M4 235647 59.87985       H. Sarpei  19       Ghana     VfB Stuttgart €240K  €2K          €456K5 233105 59.99989      K. Dougall  25   Australia          Barnsley €650K  €3K          €1.2M6 220968 60.04206 A. El Messaoudi  22     Morocco   Fortuna Sittard €1.2M  €4K          €1.8M
+
+
+COVARIANZA + PONDERADO = 10
+
+      id     dist            name age nationality              club value wage release_clause1 242267  0.00000    J. Campuzano  22    Colombia Atlético Nacional €1.3M  €2K          €2.6M2 238282 56.00246    M. Coulibaly  19     Senegal           Udinese €1.4M  €4K          €3.3M3 242490 59.50191        S. Gomez  22    Colombia  Itagüí Leones FC €850K  €1K          €1.3M4 235647 59.87985       H. Sarpei  19       Ghana     VfB Stuttgart €240K  €2K          €456K5 233105 59.99989      K. Dougall  25   Australia          Barnsley €650K  €3K          €1.2M6 220968 60.04206 A. El Messaoudi  22     Morocco   Fortuna Sittard €1.2M  €4K          €1.8M
+
+
+
+
+
+
+
+
+
+
