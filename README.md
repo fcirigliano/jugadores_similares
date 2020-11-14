@@ -2,6 +2,6 @@
 Proyecto que detecta jugadores similares a uno dado
 
 
-[Datos](https://www.kaggle.com/karangadiya/fifa19)
+[Sitio de Kaggle - Origen de datos](https://www.kaggle.com/karangadiya/fifa19)
 
-[Datos procesados](Fifa2019.csv)
+[Datos crudos - Input del algoritmo](https://raw.githubusercontent.com/fcirigliano/jugadores_similares/main/FIFA_2019.csv)
