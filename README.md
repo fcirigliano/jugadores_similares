@@ -17,6 +17,7 @@ Proyecto que detecta jugadores similares a uno dado
 [Sitio de Kaggle - Origen de datos](https://www.kaggle.com/batuhandemirci/fifa-2021-team-and-player-dataset?select=teams.csv)
 
 [Datos crudos Jugadores - Input del algoritmo](https://raw.githubusercontent.com/fcirigliano/jugadores_similares/main/FIFA_2021.csv)
+
 [Datos crudos Equipos - Input del algoritmo](https://raw.githubusercontent.com/fcirigliano/jugadores_similares/main/TEAMS_2021.csv)
 
 [Notebook Colab - Algoritmo desarrollado en R](https://github.com/fcirigliano/jugadores_similares/blob/main/Jugadores_Similares_2021.ipynb)
